@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customize umbrella</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="container">
+      
+        <div id="imageContainer">
+            <div class="UmbrellaContainer" id="image">
+              <div id="loader"> 
+                <img style=" z-index: -1;" src="/assets/loader_icon.svg" alt="Loading">
+              </div>
+              <div  id="logo"></div>
+            </div>
+            
+        </div>
+        <div id="buttonContainer">
+          <h1 style=" font-family: 'Montserrat', sans-serif;" >Custom Umbrella</h1>
+          <a style="background-color: rgb(37, 150, 190); color: white;" href="#" id="btn1" class="round-button"></a>
+          <a style="background-color: rgb(195, 88, 134, 255); color: white;" href="#"id="btn2" class="round-button"></a>
+          <a style="background-color: rgb(206, 206, 7); color: white;" href="#"id="btn3" class="round-button"></a>
+          <h3 style="color: rgb(81, 81, 81);">Upload a logo for an instant preview</h3>
+          <p style="color: rgb(134, 134, 134);">.png and .jpg files only. Max file size is 5MB</p>
+          <label for="uploadBtn" class="upload-button">
+            <img src="/assets/upload_icon.svg" alt="Upload" tyle="width: 70px; height: 100px; position: absolute; left: 0;">
+            <span id="fileName">UPLOAD LOGO</span>
+          </label>
+          <input type="file" id="uploadBtn" style="display: none;" onchange="showFileName()">
+          </div>
+    </div>
+    
+</body>
+<script src="/script.js"></script>
+
+</html>
